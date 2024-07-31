@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../Poppins/Poppins-Black.ttf);
+  src: url(../Poppins/Poppins-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #222222;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo span {
+  background-color: #007ced;
+  padding: 0.8rem;
+  border-radius: 100%;
+  font-size: 1.5rem;
+}
+
+.nav-links ul {
+  display: flex;
+  width: 40rem;
+  justify-content: space-between;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ffffff80;
+  transition: color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff80;
+}
+
+.nav-links ul li a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links ul li:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.page-title {
+  padding: 2.5rem 4rem;
+  border-top: 1px #333333 solid;
+  border-bottom: 1px #333333 solid;
+  background-color: #252525;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+}
+
+.tools-box {
+  flex: 1;
+}
+
+.tools {
+  display: flex;
+}
+
+.tools:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.tools-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools img {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 1rem;
+}
+
+.content-heading {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.content-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #00aaff,
+    #222
+  ); /* Gradient from blue to gray */
+}
+
+.tools-content p {
+  color: #ffffff70;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 2px solid #444;
+  font-size: 1.2rem;
+  color: #ffffff80;
+  margin-top: 1rem;
+}
+
+.social span:first-child {
+  margin-right: 1rem;
+}
+
+.pagefrontend-box-right-bars {
+  display: grid;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .nav-links ul {
+    width: 25rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-element button {
+    font-size: 0.8rem;
+  }
+
+  .nav-links ul li {
+    font-size: 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .intro {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-links ul {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .intro-element {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    gap: 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
